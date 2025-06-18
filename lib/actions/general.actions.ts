@@ -78,14 +78,6 @@ export async function createFeedback(params: CreateFeedbackParams) {
     });
 
     const feedback = await db.collection('feedback').add({
-      // interviewId: interviewId,
-      // userId: userId,
-      // totalScore: object.totalScore,
-      // categoryScores: object.categoryScores,
-      // strengths: object.strengths,
-      // areasForImprovement: object.areasForImprovement,
-      // finalAssessment: object.finalAssessment,
-      // createdAt: new Date().toISOString(),
       interviewId, userId, totalScore, strengths, categoryScores, areasForImprovement, finalAssessment,
       createdAt: new Date().toISOString(),
 
